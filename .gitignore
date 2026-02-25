@@ -4,5 +4,4 @@ __pycache__/
 _build/
 node_modules/
 .env
-rebuild_tutorials.sh
 Klotho Notebooks.md
