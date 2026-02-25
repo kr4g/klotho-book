@@ -1,10 +1,14 @@
 # Klotho Book
 
-Interactive Jupyter Book companion to the [Klotho](https://github.com/kr4g/Klotho) toolkit — covering the theory and practice of computer-assisted composition.
+Interactive Jupyter Book companion to the [Klotho](https://github.com/kr4g/Klotho) toolkit — covering the theory and practice of computational music composition.
+
+You can read the interactive book online — no installation required.
 
 **Read online:** [https://kr4g.github.io/klotho-book/](https://kr4g.github.io/klotho-book/)
 
-## Local development
+## Local development (optional)
+
+The following is only needed if you want to run or modify the notebooks locally.
 
 Install dependencies and Klotho:
 
