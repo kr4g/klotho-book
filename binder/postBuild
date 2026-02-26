@@ -1,3 +1,4 @@
 #!/bin/bash
 set -e
 pip install --no-deps git+https://github.com/kr4g/Klotho.git
+jupyter trust 00_general/*.ipynb 01_time/**/*.ipynb 02_tones/**/*.ipynb
