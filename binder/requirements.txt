@@ -12,4 +12,5 @@ tabulate
 networkx
 rustworkx
 scikit-learn
+mido
 IPython
