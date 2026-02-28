@@ -2,6 +2,7 @@ jupyterlab>=4
 ipykernel
 ipywidgets>=8
 jupyterlab_widgets
+klotho-cac==4.5.3
 numpy
 sympy
 pandas
