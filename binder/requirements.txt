@@ -2,6 +2,8 @@ jupyterlab>=4
 ipykernel
 ipywidgets>=8
 jupyterlab_widgets
+# Keep in sync with latest published Klotho release on PyPI.
+# Update this pin after each Klotho PyPI release.
 klotho-cac==4.5.3
 numpy
 sympy
