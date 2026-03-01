@@ -36,6 +36,22 @@ print('run')
 " "$1"
 }
 
+notebook_has_errors() {
+    python3 -c "
+import json, sys
+with open(sys.argv[1]) as f:
+    nb = json.load(f)
+for cell in nb.get('cells', []):
+    if cell.get('cell_type') != 'code':
+        continue
+    for out in cell.get('outputs', []):
+        if out.get('output_type') == 'error':
+            print('error')
+            sys.exit(0)
+print('ok')
+" "$1"
+}
+
 echo "Collecting tutorial notebooks..."
 
 NOTEBOOKS=()
@@ -65,8 +81,13 @@ SUCCEEDED=()
 for nb in "${NOTEBOOKS[@]}"; do
     name=$(basename "$nb")
     echo "--- $name ---"
-    if jupyter nbconvert --to notebook --execute --inplace --allow-errors "$nb" 2>&1; then
-        SUCCEEDED+=("$name")
+    if jupyter nbconvert --to notebook --execute --inplace "$nb" 2>&1; then
+        if [ "$(notebook_has_errors "$nb")" = "error" ]; then
+            echo "  FAILED: $name (notebook contains cell error outputs)"
+            FAILED+=("$name")
+        else
+            SUCCEEDED+=("$name")
+        fi
     else
         echo "  FAILED: $name"
         FAILED+=("$name")
