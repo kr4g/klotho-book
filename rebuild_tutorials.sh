@@ -8,6 +8,7 @@
 set -e
 
 TUTORIALS_DIR="."
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 should_skip() {
     python3 -c "
@@ -51,6 +52,10 @@ for cell in nb.get('cells', []):
 print('ok')
 " "$1"
 }
+
+echo "Generating static JS assets..."
+python3 "$SCRIPT_DIR/generate_static.py"
+echo ""
 
 echo "Collecting tutorial notebooks..."
 
