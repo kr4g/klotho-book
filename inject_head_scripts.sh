@@ -11,7 +11,7 @@ BUILD_HTML="${1:-_build/html}"
 
 LOADER_FILE=$(mktemp)
 cat > "$LOADER_FILE" << 'ENDOFLOADER'
-<style>[data-name="outputs-container"]>div>.p-2\.5{display:none}article{animation:klothoFadeIn .3s ease-in}@keyframes klothoFadeIn{from{opacity:0}to{opacity:1}}</style><script>(function(){var b="/";try{var e=document.querySelector('link[href*="/build/"]');if(e)b=e.href.replace(/\/build\/.*$/,"/");}catch(x){}["static/scheduler.js","static/scheduler_score.js","static/draw.js","static/animation_bridge.js","static/klotho_boot.js"].forEach(function(f){var s=document.createElement("script");s.src=b+f;s.async=false;document.head.appendChild(s);});})();</script>
+<script>(function(){var b="/";try{var e=document.querySelector('link[href*="/build/"]');if(e)b=e.href.replace(/\/build\/.*$/,"/");}catch(x){}["static/scheduler.js","static/scheduler_score.js","static/draw.js","static/animation_bridge.js","static/klotho_boot.js"].forEach(function(f){var s=document.createElement("script");s.src=b+f;s.async=false;document.head.appendChild(s);});})();</script>
 ENDOFLOADER
 LOADER=$(cat "$LOADER_FILE" | tr -d '\n')
 rm "$LOADER_FILE"
