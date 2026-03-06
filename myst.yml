@@ -24,13 +24,15 @@ project:
     - title: Time
       children:
         - file: 01_time/1-0-1_principles_of_proportion.ipynb
+        - file: 01_time/1-0-2_taxonomy_basic_types.ipynb
         - title: Rhythm Trees
           children:
             - file: 01_time/01_rhythm_trees/1-1-1_intro_to_rhythm_trees.ipynb
-            - file: 01_time/01_rhythm_trees/1-1-2_rhythmic_vocabulary.ipynb
+            - file: 01_time/01_rhythm_trees/1-1-2_taxonomy_mixed_types.ipynb
         - title: Temporal Units
           children:
             - file: 01_time/02_temporal_units/1-2-1_intro_to_temporal_units.ipynb
+            - file: 01_time/02_temporal_units/1-2-2_sequences_and_blocks.ipynb
         - title: Operations and Algorithms
           children:
             - file: 01_time/03_operations/1-3-1_partitions.ipynb
@@ -44,8 +46,9 @@ project:
             - title: Harmonic Lattices
               children:
                 - file: 02_tones/01_lattices/01_harmonic_lattices/2-1-1-1_harmonic_space_and_tone_lattices.ipynb
-                - file: 02_tones/01_lattices/01_harmonic_lattices/2-1-1-2_embedded_structures.ipynb
-                - file: 02_tones/01_lattices/01_harmonic_lattices/2-1-1-3_generators_and_custom_lattices.ipynb
+                - file: 02_tones/01_lattices/01_harmonic_lattices/2-1-1-2_harmonic_distance.ipynb
+                - file: 02_tones/01_lattices/01_harmonic_lattices/2-1-1-3_embedded_structures.ipynb
+                - file: 02_tones/01_lattices/01_harmonic_lattices/2-1-1-4_generators_and_custom_lattices.ipynb
             - title: Combination Product Sets
               children:
                 - file: 02_tones/01_lattices/02_cps/2-1-2-1_combination_product_sets.ipynb
