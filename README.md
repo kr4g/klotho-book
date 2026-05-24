@@ -1,6 +1,6 @@
 # Klotho Book
 
-Interactive Jupyter Book companion to the [Klotho](https://github.com/kr4g/Klotho) toolkit — covering the theory and practice of computational music composition.
+Interactive Jupyter Book companion to the [Klotho](https://github.com/kr4g/Klotho) toolkit, covering theory and practice of computational music composition. This is a work in progress, but will ultimately cover such topics as foundational graph structures, formal grammars, evolutionary algorithms, quantum fields, and beyond.
 
 You can read the interactive book online — no installation required.
 
