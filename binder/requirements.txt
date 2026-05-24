@@ -3,7 +3,7 @@ ipykernel
 ipywidgets>=8
 jupyterlab_widgets
 # Install published Klotho release from PyPI (bump after each PyPI release).
-klotho-cac==7.1.1
+klotho-cac==8.0.1
 numpy
 sympy
 pandas
