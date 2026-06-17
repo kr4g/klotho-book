@@ -72,7 +72,7 @@ while IFS= read -r nb; do
         continue
     fi
     NOTEBOOKS+=("$nb")
-done < <(find "$TUTORIALS_DIR" -name "*.ipynb" -not -path "*/.ipynb_checkpoints/*" -not -path "*/_build/*" | sort)
+done < <(find "$TUTORIALS_DIR" -name "*.ipynb" -not -path "*/.ipynb_checkpoints/*" -not -path "*/_build/*" -not -path "*/examples/*" | sort)
 
 if [ ${#NOTEBOOKS[@]} -eq 0 ]; then
     echo "No notebooks found to convert."
